@@ -16,14 +16,15 @@
                         <input class="texto-entrada" id="txt-encriptar" type="text" placeholder="Ingrese el texto aqui">
                 </div>
                 <div class="salida">
-                    <img class="homero" src="Fondo_De_Pantalla_Simpson-removebg.png">
-                    <h1 class="mensaje-1">Ningun mensaje fue encontrado</h1>
-                    <p class="mensaje-2">Ingresa el texto que desees encriptar o desencriptar</p>
-                    <button type="button" class="copiar">Copiar</button> 
+                    <img id="homero-1" class="homero" src="Fondo_De_Pantalla_Simpson-removebg.png">
+                    <h1 id="mensaje-1" class="mensaje-1">Ningun mensaje fue encontrado</h1>
+                    <p id="mensaje-2" class="mensaje-2">Ingresa el texto que desees encriptar o desencriptar</p>
+                    <input type="text" id="mesaje-salida" class="mensaje-salida">
+                    <button type="button" id="btncopiar" class="copiar">Copiar</button> 
                 </div>
                 <div class="button">
                     <p class="i">&#8505; solo minusculas y sin acento </p>
-                    <button type="button" class="cifrar">Encriptar</button>
+                    <button type="button" onclick="btnEncriptar()" class="cifrar">Encriptar</button>
                     <button type="button" class="descifrar">Desencriptar</button>
                 </div>                   
             </div>    
