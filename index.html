@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width"> 
         <title>Challege Alura</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -14,7 +14,11 @@
                 </div>
                 <div class="entrada">
                         <input class="texto-entrada" id="txt-encriptar" type="text" placeholder="Ingrese el texto aqui">
-                </div>
+                        
+                    <p class="i">&#8505; solo minusculas y sin acento </p>
+                    <button type="button" onclick="btnEncriptar()" class="cifrar">Encriptar</button>
+                    <button type="button" class="descifrar">Desencriptar</button>
+                </div>                   
                 <div class="salida">
                     <img id="homero-1" class="homero" src="Fondo_De_Pantalla_Simpson-removebg.png">
                     <h1 id="mensaje-1" class="mensaje-1">Ningun mensaje fue encontrado</h1>
@@ -22,11 +26,6 @@
                     <input type="text" id="mesaje-salida" class="mensaje-salida">
                     <button type="button" id="btncopiar" class="copiar">Copiar</button> 
                 </div>
-                <div class="button">
-                    <p class="i">&#8505; solo minusculas y sin acento </p>
-                    <button type="button" onclick="btnEncriptar()" class="cifrar">Encriptar</button>
-                    <button type="button" class="descifrar">Desencriptar</button>
-                </div>                   
             </div>    
         </main>
         <script src="app.js"></script>
