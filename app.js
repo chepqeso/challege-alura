@@ -7,10 +7,11 @@ let matrizCode = [
     ['o','ober'],
     ['u','ufat']
 ];
-//funcion para cifrar el mensaje
+//funcion para cifrar el mensajes
 function btnEncriptar(){
     const encriptarOn = encriptar(texto.value);
     mensaje.value = encriptarOn;
+    texto.value = "";
     
     document.getElementById('homero-1').style.display = 'none';
     document.getElementById('mensaje-1').style.display = 'none';
@@ -32,6 +33,7 @@ function encriptar(fraseEncriptada){
 function btnDesencriptar(){
     const desencriptarOff = desencriptar(texto.value)
     mensaje.value = desencriptarOff;
+    texto.value = "";
 
     document.getElementById('homero-1').style.display = 'none';
     document.getElementById('mensaje-1').style.display = 'none';
