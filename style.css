@@ -2,6 +2,7 @@ body{
     margin: 0;
     width: auto;
     background: plum;
+    font-family: "Cormorant Garamond", serif;
 }
 main{
     display: flex;
@@ -10,6 +11,7 @@ main{
     position: relative;
     display: inherit;
     text-align: center;
+    font-family: cursive;
 }
 .container {
     width: 100%;
@@ -23,11 +25,11 @@ main{
     background: plum;
     border: none;
     font-size: 22px;
+    outline: none;
 
 }
 ::placeholder{
     color: black;
-    /*text-align: center;*/
 }
 .i{
     width: auto;
@@ -47,6 +49,7 @@ main{
     border-radius: 15px;
     border: none;
     cursor: pointer;
+    box-shadow: 5px 5px 10px -5px black;
 }
 .descifrar{
     width:  18vw;
@@ -57,6 +60,7 @@ main{
     border-radius: 15px;
     border: none;
     cursor: pointer;
+    box-shadow: 5px 5px 10px -5px black;
 }
 .cifrar:hover, .descifrar:hover, .copiar:hover{
     transform: scale(1.05);
@@ -66,24 +70,30 @@ main{
     background-color: white;
     margin-right: 5%;
     text-align: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px black;
+}
+.mensaje-1{
+    font-size: 30px;
 }
 .homero{
-    width: 15rem;
+    width: 180px;
     margin: 2rem;
 }
 .mensaje-salida{
-    width: 90%;
+    width: 95%;
     height: auto;
-    margin-top: 1rem;
+    margin: 0.3rem;
     font-size: 22px;
     display: none;
     border: none;
+    outline: none;
 }
 .copiar{
     width:  80%;
     padding: 1rem;
-    margin-top: 26rem;
-    margin-bottom: 2rem;
+    margin-top: 95%;
+    margin-bottom: 1rem;
     margin-left: 2rem;
     font-size: 1.2rem;
     background-color:  lightblue;
@@ -91,12 +101,14 @@ main{
     border: none;
     cursor: pointer;
     display: none;
- 
+    box-shadow: 5px 5px 10px -7px black;
 }
 footer{
     margin-top: 2rem;
-    font-size: 22px;
+    font-size: 30px;
     text-align: center;
+    font-family: cursive;
+    text-shadow: 3px 3px 20px black;
 }
 
 @media screen and (max-width: 768px){
@@ -139,11 +151,12 @@ footer{
     .copiar{
         width: 40%;
         margin: auto;
-        margin-top: 10rem; 
+        margin-top: 3rem;
+        margin-bottom: 1rem; 
     }
     footer{
-        text-align: center;
-        font-size: 1rem;
+        font-size: 20px;
+        margin-top: 5%;
     }
     
 }
@@ -165,17 +178,23 @@ footer{
         margin-left: 2rem;
         margin-top: 1rem;
     }
+    .container2{
+        width: 90%;
+        margin: 3%;
+    }
     .homero{
         display: none;
     }
     .mensaje-salida{
-        width: 95%;
-        height: auto;
-        margin: 0.3rem
+        width: 80%;
+        height: 50px;
+        height: 20%;
+        margin-top: 1rem;
+        margin-left: 2rem;
     }
     .copiar{
         width: 80%;
         margin-left: 2rem;
-        margin-top: 3rem;   
+        margin-top: 1rem;
     }
 }

@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width", initial-scale="1.0"> 
         <title>Challege Alura</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <head>
         <body>
             <header class="title">
@@ -13,10 +16,10 @@
             <main>
                 <section class="container">
                     <div class="entrada">
-                        <textarea class="texto-entrada" id="txt-encriptar" type="text" placeholder="Ingrese el texto aqui"></textarea>
+                        <textarea class="texto-entrada" id="txt-encriptar" type="text" rows="5" placeholder="Ingresé el texto aquí"></textarea>
                     </div>
                     <div>        
-                        <p class="i">&#8505; solo minusculas y sin acento </p>
+                        <p class="i">&#8505; Solo minúsculas y sin acento </p>
                     </div>
                     <div class="botones">
                         <button type="button" onclick="btnEncriptar()" class="cifrar">Encriptar</button>
@@ -26,9 +29,9 @@
                 <section class="container2">    
                     <div class="salida">
                         <img id="homero-1" class="homero" src="Fondo_De_Pantalla_Simpson-removebg.png">
-                        <h1 id="mensaje-1" class="mensaje-1">Ningun mensaje fue encontrado</h1>
+                        <h1 id="mensaje-1" class="mensaje-1">Ningún mensaje fue encontrado</h1>
                         <p id="mensaje-2" class="mensaje-2">Ingresa el texto que desees encriptar o desencriptar </p>
-                        <textarea type="text" id="mensaje-salida" class="mensaje-salida"></textarea>
+                        <textarea type="text" id="mensaje-salida" class="mensaje-salida" rows="10"></textarea>
                         <button type="button" id="btncopiar" onclick="copiarTexto()" class="copiar">Copiar</button> 
                     </div>
                 </section>

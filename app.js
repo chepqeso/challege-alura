@@ -11,6 +11,7 @@ let matrizCode = [
 function btnEncriptar(){
     const encriptarOn = encriptar(texto.value);
     mensaje.value = encriptarOn;
+    encriptarOn = /^[a-z\s]*$/g.test(texto.value) ? "" : alert ('Ups! solo minúsculas, sin acentos o carácteres especiales.');
     texto.value = "";
     
     document.getElementById('homero-1').style.display = 'none';
@@ -33,6 +34,7 @@ function encriptar(fraseEncriptada){
 function btnDesencriptar(){
     const desencriptarOff = desencriptar(texto.value)
     mensaje.value = desencriptarOff;
+    desencriptarOff = /^[a-z\s]*$/g.test(texto.value) ? "" : alert ('Ups! Solo minúsculas, sin acentos o carácteres especiales.');
     texto.value = "";
 
     document.getElementById('homero-1').style.display = 'none';
